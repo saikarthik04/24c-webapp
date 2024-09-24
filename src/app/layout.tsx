@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {Montserrat} from "next/font/google"
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+const MontserratFont = Montserrat({
+  weight:["400", "500", "900" ,"800", "700"],
+  subsets:["latin"],
+  preload: true,
+  display:"swap",
+  style:"normal"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth" >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${MontserratFont.className}  antialiased`}
       >
         {children}
       </body>
