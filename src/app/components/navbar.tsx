@@ -13,12 +13,6 @@ const Navbar = () => {
       {/* brand logo */}
       <div className={` ${AntonFont.className}`}>
         <h1 className='text-5xl'>24°</h1></div>
-        {/* <div className='text-sm font-semibold flex list-none'>
-        <li className='uppercase '>men</li>
-        <li className='uppercase'>women</li>
-        <li className='uppercase'>kids</li>
-        <li className='uppercase'>accessories</li>
-       </div> */}
       <ul className='text-sm font-medium flex gap-3 cursor-pointer'>
         <li className='uppercase'>men</li>
         <li className='uppercase'>women</li>

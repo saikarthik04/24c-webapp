@@ -25,13 +25,7 @@ body {
     text-wrap: balance;
   }
 }
-@media (min-width:1024px) {
-.intro-text{
-  font-size: 40rem;
-  position: relative;
-  top: -60rem;
-}
-}
+
 @media (min-width:425px) {
   .intro-text{
     font-size: 20rem;
@@ -39,10 +33,15 @@ body {
     top: -20rem;
   }
 }
-@media (max-width:424px) {
-    .intro-text{
+.intro-text{
       font-size: 10rem;
       position: relative;
       top: -15rem;
-    }
 }
+@media (min-width:1024px) {
+  .intro-text{
+    font-size: 40rem;
+    position: relative;
+    top: -60rem;
+  }
+  }
