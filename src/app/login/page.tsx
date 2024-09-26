@@ -3,8 +3,11 @@ import React from 'react'
 import {Input} from "@nextui-org/input";
 import Image from 'next/image';
 import contants from '@/utils/constants';
+import Navbar from '../components/navbar';
 const Login = () => {
   return (
+    <>
+    <Navbar/>
     <div className='flex flex-col justify-center items-center h-screen'>
     <div className='p-4 md:4 lg:w-2/6 w-screen'>
       <h2 className='py-5 text-xl font-light'>Welcome Back 🔥 
@@ -45,6 +48,7 @@ const Login = () => {
   </div>
   </div>
   </div>
+  </>
   )
 }
 
