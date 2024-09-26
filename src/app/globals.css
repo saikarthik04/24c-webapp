@@ -26,22 +26,29 @@ body {
   }
 }
 
-@media (min-width:425px) {
-  .intro-text{
-    font-size: 20rem;
-    position: relative;
-    top: -20rem;
-  }
-}
+
 .intro-text{
-      font-size: 10rem;
-      position: relative;
-      top: -15rem;
+    font-size: 10rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+@media (min-width:410px) {
+  .intro-text{
+    font-size: 40rem;
+    position: absolute;
+    top: 78%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+  }
 @media (min-width:1024px) {
   .intro-text{
     font-size: 40rem;
-    position: relative;
-    top: -60rem;
+    position: absolute;
+    top: 78%;
+    left: 48%;
+    transform: translate(-50%, -50%);
   }
   }

@@ -9,7 +9,7 @@ const AntonFont =  Anton({
 });
 const Navbar = () => {
   return (
-    <nav className='flex flex-row items-center justify-evenly py-5'>
+    <nav className='flex flex-row items-center justify-evenly py-5 sticky'>
       {/* brand logo */}
       <div className={` ${AntonFont.className}`}>
         <h1 className='text-5xl'>24°</h1></div>

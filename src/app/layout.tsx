@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import {Montserrat} from "next/font/google"
 import "./globals.css";
-
-
+import { gsap } from 'gsap'
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 const MontserratFont = Montserrat({
   weight:["400", "500", "900" ,"800", "700"],
   subsets:["latin"],
